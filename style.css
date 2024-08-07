@@ -1,11 +1,19 @@
-.content {
+.container {
+  position: relative;
+  max-width: 600px;
+  height: 500px;
+  padding: 50px;
+  color: #000;
+}
+
+.container .content {
   margin-top: 2rem;
 }
 
-.contentEng {
+.container .contentEng {
   display: block;
 }
-.contentTok {
+.container .contentTok {
   display: none;
 }
 
@@ -24,7 +32,7 @@
 }
 
 .check:checked::before {
-  background: #896e32;
+  background: #00a1ff;
 }
 
 .check::after {
@@ -42,7 +50,7 @@
 
 .check:checked::after {
   left: 25px;
-  border: 2px solid #896e32;
+  border: 2px solid #00a1ff;
 }
 
 .check:checked ~ .content.contentEng {
@@ -51,4 +59,12 @@
 
 .check:checked ~ .content.contentTok {
   display: block;
+}
+
+.en {
+  color: #333;
+}
+
+.hn {
+  color: red;
 }
