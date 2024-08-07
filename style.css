@@ -13,7 +13,7 @@
 .container .contentEng {
   display: block;
 }
-.container .contentGer {
+.container .contentTok {
   display: none;
 }
 
@@ -57,7 +57,7 @@
   display: none;
 }
 
-.check:checked ~ .content.contentGer {
+.check:checked ~ .content.contentTok {
   display: block;
 }
 
