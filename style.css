@@ -27,12 +27,12 @@
   position: absolute;
   width: 50px;
   height: 25px;
-  background: #333;
+  background: #896e32;
   border-radius: 25px;
 }
 
 .check:checked::before {
-  background: #896e32;
+  background: #333;
 }
 
 .check::after {
