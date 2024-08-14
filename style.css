@@ -1,9 +1,13 @@
+body {
+  background-color:#e5d399;
+  margin:30px 25% 0px 30%;
+}
+
 .container {
   position: relative;
   max-width: 600px;
   height: 500px;
   padding: 10px;
-  color: #000;
 }
 
 .container .content {
@@ -17,47 +21,11 @@
   display: none;
 }
 
-.check {
-  position: relative;
-  width: 50px;
-}
-
-.check::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 25px;
-  background: #896e32;
-  border-radius: 25px;
-}
-
-.check:checked::before {
-  background: #333;
-}
-
-.check::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  border-radius: 25px;
-  transition: 0.25s;
-  border: 2px solid #333;
-  box-sizing: border-box;
-}
-
-.check:checked::after {
-  left: 25px;
-  border: 2px solid #896e32;
-}
-
-.check:checked ~ .content.contentTok {
+.langswitch:checked ~ .content.contentTok {
   display: none;
 }
 
-.check:checked ~ .content.contentEng {
+.langswitch:checked ~ .content.contentEng {
   display: block;
 }
 
